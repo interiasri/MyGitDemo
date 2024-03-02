@@ -1,10 +1,9 @@
-<suite name="OrangeHRM Application Test Cases">
-	<test name="Check Login with Valid Credentials ">
+<suite name="Orange HRM Automation Testcases">
+	<test name="Login with Valid Inputs">
 	<parameter name="uname" value="Admin"></parameter>
 	<parameter name="pwd" value="Qedge123!@#"></parameter>
 		<classes>
 			<class name="AutomationTestScripts.LoginwithValidInput"></class>
 		</classes>
 	</test>
-	
 </suite>
