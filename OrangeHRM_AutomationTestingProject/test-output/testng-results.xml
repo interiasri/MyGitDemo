@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-03T11:25:28 IST" name="Orange HRM Automation Testcases" finished-at="2024-03-03T11:25:47 IST" duration-ms="19083">
+  <suite started-at="2024-03-03T19:32:41 IST" name="Orange HRM Automation Testcases" finished-at="2024-03-03T19:33:07 IST" duration-ms="26434">
     <groups>
     </groups>
-    <test started-at="2024-03-03T11:25:28 IST" name="Login with Valid Credentials Test Case" finished-at="2024-03-03T11:25:32 IST" duration-ms="3753">
+    <test started-at="2024-03-03T19:32:41 IST" name="Login with Valid Credentials Test Case" finished-at="2024-03-03T19:32:45 IST" duration-ms="3908">
       <class name="AutomationTestScripts.IsAdminModuleDisplayed">
-        <test-method is-config="true" signature="login()[pri:0, instance:AutomationTestScripts.IsAdminModuleDisplayed@36bc55de]" started-at="2024-03-03T11:25:28 IST" name="login" finished-at="2024-03-03T11:25:30 IST" duration-ms="1884" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:AutomationTestScripts.IsAdminModuleDisplayed@36bc55de]" started-at="2024-03-03T19:32:41 IST" name="login" finished-at="2024-03-03T19:32:43 IST" duration-ms="1931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="isadminModuleDisplayed()[pri:0, instance:AutomationTestScripts.IsAdminModuleDisplayed@36bc55de]" started-at="2024-03-03T11:25:30 IST" name="isadminModuleDisplayed" finished-at="2024-03-03T11:25:30 IST" duration-ms="426" status="PASS">
+        <test-method signature="isadminModuleDisplayed()[pri:0, instance:AutomationTestScripts.IsAdminModuleDisplayed@36bc55de]" started-at="2024-03-03T19:32:43 IST" name="isadminModuleDisplayed" finished-at="2024-03-03T19:32:43 IST" duration-ms="436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isadminModuleDisplayed -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:AutomationTestScripts.IsAdminModuleDisplayed@36bc55de]" started-at="2024-03-03T11:25:30 IST" name="logout" finished-at="2024-03-03T11:25:32 IST" duration-ms="1405" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:AutomationTestScripts.IsAdminModuleDisplayed@36bc55de]" started-at="2024-03-03T19:32:43 IST" name="logout" finished-at="2024-03-03T19:32:45 IST" duration-ms="1500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
       </class> <!-- AutomationTestScripts.IsAdminModuleDisplayed -->
     </test> <!-- Login with Valid Credentials Test Case -->
-    <test started-at="2024-03-03T11:25:32 IST" name="Add Employee Test Case" finished-at="2024-03-03T11:25:47 IST" duration-ms="15278">
+    <test started-at="2024-03-03T19:32:45 IST" name="Add Employee Test Case" finished-at="2024-03-03T19:33:07 IST" duration-ms="22475">
       <class name="AutomationTestScripts.AddEmployeeTestcase">
-        <test-method is-config="true" signature="invokeApp()[pri:0, instance:AutomationTestScripts.AddEmployeeTestcase@5c6648b0]" started-at="2024-03-03T11:25:23 IST" name="invokeApp" finished-at="2024-03-03T11:25:28 IST" duration-ms="4429" status="PASS">
+        <test-method is-config="true" signature="invokeApp()[pri:0, instance:AutomationTestScripts.AddEmployeeTestcase@6f1de4c7]" started-at="2024-03-03T19:32:37 IST" name="invokeApp" finished-at="2024-03-03T19:32:41 IST" duration-ms="4307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeApp -->
-        <test-method is-config="true" signature="login()[pri:0, instance:AutomationTestScripts.AddEmployeeTestcase@5c6648b0]" started-at="2024-03-03T11:25:32 IST" name="login" finished-at="2024-03-03T11:25:32 IST" duration-ms="560" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:AutomationTestScripts.AddEmployeeTestcase@6f1de4c7]" started-at="2024-03-03T19:32:45 IST" name="login" finished-at="2024-03-03T19:32:45 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addEmployee()[pri:1, instance:AutomationTestScripts.AddEmployeeTestcase@5c6648b0]" started-at="2024-03-03T11:25:32 IST" name="addEmployee" finished-at="2024-03-03T11:25:42 IST" duration-ms="10194" status="PASS">
+        <test-method signature="addEmployee()[pri:1, instance:AutomationTestScripts.AddEmployeeTestcase@6f1de4c7]" started-at="2024-03-03T19:32:45 IST" name="addEmployee" finished-at="2024-03-03T19:32:55 IST" duration-ms="9863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method signature="searchEmp()[pri:2, instance:AutomationTestScripts.AddEmployeeTestcase@5c6648b0]" started-at="2024-03-03T11:25:42 IST" name="searchEmp" finished-at="2024-03-03T11:25:46 IST" duration-ms="3506" status="PASS">
+        <test-method signature="searchEmp()[pri:2, instance:AutomationTestScripts.AddEmployeeTestcase@6f1de4c7]" started-at="2024-03-03T19:32:55 IST" name="searchEmp" finished-at="2024-03-03T19:32:59 IST" duration-ms="3493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchEmp -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:AutomationTestScripts.AddEmployeeTestcase@5c6648b0]" started-at="2024-03-03T11:25:46 IST" name="logout" finished-at="2024-03-03T11:25:47 IST" duration-ms="1008" status="PASS">
+        <test-method signature="addUser()[pri:3, instance:AutomationTestScripts.AddEmployeeTestcase@6f1de4c7]" started-at="2024-03-03T19:32:59 IST" name="addUser" finished-at="2024-03-03T19:33:06 IST" duration-ms="7654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:AutomationTestScripts.AddEmployeeTestcase@6f1de4c7]" started-at="2024-03-03T19:33:06 IST" name="logout" finished-at="2024-03-03T19:33:07 IST" duration-ms="952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:AutomationTestScripts.AddEmployeeTestcase@5c6648b0]" started-at="2024-03-03T11:25:47 IST" name="closeApp" finished-at="2024-03-03T11:25:47 IST" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:AutomationTestScripts.AddEmployeeTestcase@6f1de4c7]" started-at="2024-03-03T19:33:07 IST" name="closeApp" finished-at="2024-03-03T19:33:08 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

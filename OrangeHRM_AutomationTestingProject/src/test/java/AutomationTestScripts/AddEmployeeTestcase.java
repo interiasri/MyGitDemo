@@ -41,7 +41,7 @@ public class AddEmployeeTestcase extends BasicFunctions {
 		String addemp1=driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/h6")).getText();
 		System.out.println(addemp1);
 		driver.findElement(By.name("firstName")).sendKeys("Sridhar");
-		driver.findElement(By.name("lastName")).sendKeys("porus2");
+		driver.findElement(By.name("lastName")).sendKeys("porus");
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]")).click();
 		Thread.sleep(5000);	
 	}
@@ -64,7 +64,57 @@ public class AddEmployeeTestcase extends BasicFunctions {
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/div/div/input")).sendKeys("sridhar");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(2000);
+		
+		String records=driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/span")).getText();
+		System.out.println(records);
+		
 	}
 	
+	
+	
+	@Test(priority=3)
+	public void addUser() throws InterruptedException {
+		WebElement menu=driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul"));
+		List<WebElement> menulist=menu.findElements(By.tagName("li"));
+		int listcount=menulist.size();
+		System.out.println(listcount);
+		for(int i=0; i<menulist.size();i++) {
+			if(menulist.get(i).getText().equalsIgnoreCase("Admin")) {
+				menulist.get(i).click();
+				break;
+			}
+		}
+		
+		WebElement topnav=driver.findElement(By.className("oxd-topbar-body-nav"));
+		WebElement m1=topnav.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[2]/nav/ul"));
+		List<WebElement> mlist=m1.findElements(By.tagName("li"));
+		System.out.println(mlist.size());
+		
+		for(int j=0; j<mlist.size();j++) {
+			String umgmt=mlist.get(j).getText();
+			if(umgmt.equalsIgnoreCase("User Management")) {
+				mlist.get(j).click();
+				break;
+			}
+		}
+		
+		Thread.sleep(2000);
+		WebElement dropdown=driver.findElement(By.className("oxd-dropdown-menu"));
+		List<WebElement> ddlist=dropdown.findElements(By.tagName("li"));
+		for(int k=0; k<ddlist.size(); k++) {
+			String ddname=ddlist.get(k).getText();
+			if(ddname.equalsIgnoreCase("Users")) {
+				ddlist.get(k).click();
+				break;
+			}
+		}
+		Thread.sleep(2000);
+		String suser=driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[1]/div[1]/h5")).getText();
+		System.out.println(suser);
+		
+		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button")).click();
+		String adduser=driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/h6")).getText();
+		System.out.println(adduser);
+	}
 
 }
