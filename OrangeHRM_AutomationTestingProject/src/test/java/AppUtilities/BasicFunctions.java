@@ -1,7 +1,6 @@
 package AppUtilities;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,25 +19,25 @@ public class BasicFunctions {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("http://orangehrm.qedgetech.com");
+		driver.get("https://opensource-demo.orangehrmlive.com/");
 	}
 	
 	@BeforeTest
-	public void login(String uname, String pwd) {
-		driver.findElement(By.xpath("//*[@id=\"divUsername\"]/span")).click();
-		driver.findElement(By.id("txtUsername")).sendKeys(uname);
-		driver.findElement(By.id("txtPassword")).sendKeys(pwd);
-		driver.findElement(By.id("btnLogin")).click();
+	public void login() {
+		driver.findElement(By.name("username")).sendKeys("Admin");
+		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
 	}
 	
 	@AfterTest
 	public static void logout() {
-		driver.findElement(By.partialLinkText("Welcome")).click();
+		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span/p")).click();
 		driver.findElement(By.linkText("Logout")).click();
 		
 	}
-	
 	
 	@AfterSuite
 	public static void closeApp() {

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Orange HRM Automation Testcases]">
+  <test thread-count="5" name="Add Employee Test Case(failed)">
     <classes>
-      <class name="AutomationTestScripts.LoginwithValidInput">
+      <class name="AutomationTestScripts.AddEmployeeTestcase">
         <methods>
-          <include name="login"/>
+          <include name="addEmployee"/>
           <include name="invokeApp"/>
           <include name="closeApp"/>
+          <include name="login"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- AutomationTestScripts.LoginwithValidInput -->
+      </class> <!-- AutomationTestScripts.AddEmployeeTestcase -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Add Employee Test Case(failed) -->
+</suite> <!-- Failed suite [Orange HRM Automation Testcases] -->

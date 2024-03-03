@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutomationTestScripts.LoginwithValidInput">
+      <class name="AutomationTestScripts.EmployeeReg">
         <methods>
-          <include name="login"/>
           <include name="invokeApp"/>
+          <include name="addEmployee"/>
           <include name="closeApp"/>
           <include name="logout"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- AutomationTestScripts.LoginwithValidInput -->
+      </class> <!-- AutomationTestScripts.EmployeeReg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

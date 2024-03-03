@@ -1,9 +1,12 @@
 <suite name="Orange HRM Automation Testcases">
-	<test name="Login with Valid Inputs">
-	<parameter name="uname" value="Admin"></parameter>
-	<parameter name="pwd" value="Qedge123!@#"></parameter>
+	<test name="Login with Valid Credentials Test Case">
 		<classes>
-			<class name="AutomationTestScripts.LoginwithValidInput"></class>
+			<class name="AutomationTestScripts.IsAdminModuleDisplayed"></class>
+		</classes>
+	</test>
+	<test name="Add Employee Test Case">
+		<classes>
+			<class name="AutomationTestScripts.AddEmployeeTestcase"></class>
 		</classes>
 	</test>
 </suite>
