@@ -1,3 +1,18 @@
-<suite>
+<suite name="QedgeTechnologies- Orange HRM Test Cases">
+	<test name="Admin Module Test Case">
+	<parameter name="module" value="Admin"></parameter>
+		<classes>
+			<class name="TestCases.IsSpecificModuleTestCase"></class>
+		</classes>
+	</test>
+	
+	<test name="Employee Registration Test Case">
+	<parameter name="module" value="PIM"></parameter>
+	<parameter name="subitem" value="Add Employee"></parameter>
+	<parameter name="emplist" value="Employee List"></parameter>
+		<classes>
+			<class name="TestCases.AddEmployee"></class>
+		</classes>
+	</test>
 	
 </suite>
