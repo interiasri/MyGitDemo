@@ -1,29 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-05T10:05:08 IST" name="QedgeTechnologies- Orange HRM Test Cases" finished-at="2024-03-05T10:05:13 IST" duration-ms="4411">
+  <suite started-at="2024-03-05T10:15:32 IST" name="QedgeTechnologies- Orange HRM Test Cases" finished-at="2024-03-05T10:16:10 IST" duration-ms="37631">
     <groups>
     </groups>
-    <test started-at="2024-03-05T10:05:08 IST" name="Check Employee records Test Case" finished-at="2024-03-05T10:05:13 IST" duration-ms="4411">
-      <class name="TestCases.UserManagement">
-        <test-method is-config="true" signature="invokeApp()[pri:0, instance:TestCases.UserManagement@4218d6a3]" started-at="2024-03-05T10:05:06 IST" name="invokeApp" finished-at="2024-03-05T10:05:08 IST" duration-ms="2404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeApp -->
-        <test-method is-config="true" signature="login()[pri:0, instance:TestCases.UserManagement@4218d6a3]" started-at="2024-03-05T10:05:08 IST" name="login" finished-at="2024-03-05T10:05:10 IST" duration-ms="1281" status="PASS">
+    <test started-at="2024-03-05T10:15:32 IST" name="Admin Module Test Case" finished-at="2024-03-05T10:15:34 IST" duration-ms="2298">
+      <class name="TestCases.IsSpecificModuleTestCase">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestCases.IsSpecificModuleTestCase@7b98f307]" started-at="2024-03-05T10:15:32 IST" name="login" finished-at="2024-03-05T10:15:33 IST" duration-ms="1333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="CheckEmployeeAsUser()[pri:0, instance:TestCases.UserManagement@4218d6a3]" started-at="2024-03-05T10:05:10 IST" name="CheckEmployeeAsUser" finished-at="2024-03-05T10:05:12 IST" duration-ms="2575" status="PASS">
+        <test-method signature="isModuleDisplayed(java.lang.String)[pri:0, instance:TestCases.IsSpecificModuleTestCase@7b98f307]" started-at="2024-03-05T10:15:33 IST" name="isModuleDisplayed" finished-at="2024-03-05T10:15:34 IST" duration-ms="392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckEmployeeAsUser -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases.UserManagement@4218d6a3]" started-at="2024-03-05T10:05:12 IST" name="logout" finished-at="2024-03-05T10:05:13 IST" duration-ms="502" status="PASS">
+        </test-method> <!-- isModuleDisplayed -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases.IsSpecificModuleTestCase@7b98f307]" started-at="2024-03-05T10:15:34 IST" name="logout" finished-at="2024-03-05T10:15:34 IST" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestCases.UserManagement@4218d6a3]" started-at="2024-03-05T10:05:13 IST" name="closeApp" finished-at="2024-03-05T10:05:13 IST" duration-ms="179" status="PASS">
+      </class> <!-- TestCases.IsSpecificModuleTestCase -->
+    </test> <!-- Admin Module Test Case -->
+    <test started-at="2024-03-05T10:15:34 IST" name="Employee Registration Test Case" finished-at="2024-03-05T10:15:51 IST" duration-ms="16579">
+      <class name="TestCases.AddEmployee">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestCases.AddEmployee@dd05255]" started-at="2024-03-05T10:15:34 IST" name="login" finished-at="2024-03-05T10:15:35 IST" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="empreg(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.AddEmployee@dd05255]" started-at="2024-03-05T10:15:35 IST" name="empreg" finished-at="2024-03-05T10:15:50 IST" duration-ms="15173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PIM]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Add Employee]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Employee List]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empreg -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases.AddEmployee@dd05255]" started-at="2024-03-05T10:15:50 IST" name="logout" finished-at="2024-03-05T10:15:51 IST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- TestCases.AddEmployee -->
+    </test> <!-- Employee Registration Test Case -->
+    <test started-at="2024-03-05T10:15:51 IST" name="User Registartion Testcase" finished-at="2024-03-05T10:16:05 IST" duration-ms="13509">
+      <class name="TestCases.AddUser">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestCases.AddUser@10683d9d]" started-at="2024-03-05T10:15:51 IST" name="login" finished-at="2024-03-05T10:15:52 IST" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="userRegistration(java.lang.String,java.lang.String)[pri:0, instance:TestCases.AddUser@10683d9d]" started-at="2024-03-05T10:15:52 IST" name="userRegistration" finished-at="2024-03-05T10:16:04 IST" duration-ms="11932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[User Management]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistration -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases.AddUser@10683d9d]" started-at="2024-03-05T10:16:04 IST" name="logout" finished-at="2024-03-05T10:16:05 IST" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- TestCases.AddUser -->
+    </test> <!-- User Registartion Testcase -->
+    <test started-at="2024-03-05T10:16:05 IST" name="Employee Login Test Case" finished-at="2024-03-05T10:16:06 IST" duration-ms="1556">
+      <class name="TestCases.EmployeeLoginTest">
+        <test-method is-config="true" signature="login()[pri:0, instance:TestCases.EmployeeLoginTest@682b2fa]" started-at="2024-03-05T10:16:05 IST" name="login" finished-at="2024-03-05T10:16:05 IST" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="employeeName()[pri:0, instance:TestCases.EmployeeLoginTest@682b2fa]" started-at="2024-03-05T10:16:05 IST" name="employeeName" finished-at="2024-03-05T10:16:06 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeName -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases.EmployeeLoginTest@682b2fa]" started-at="2024-03-05T10:16:06 IST" name="logout" finished-at="2024-03-05T10:16:06 IST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- TestCases.EmployeeLoginTest -->
+    </test> <!-- Employee Login Test Case -->
+    <test started-at="2024-03-05T10:16:06 IST" name="Check Employee records Test Case" finished-at="2024-03-05T10:16:10 IST" duration-ms="3613">
+      <class name="TestCases.UserManagement">
+        <test-method is-config="true" signature="invokeApp()[pri:0, instance:TestCases.UserManagement@6743e411]" started-at="2024-03-05T10:15:29 IST" name="invokeApp" finished-at="2024-03-05T10:15:32 IST" duration-ms="2593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeApp -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TestCases.UserManagement@6743e411]" started-at="2024-03-05T10:16:06 IST" name="login" finished-at="2024-03-05T10:16:07 IST" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CheckEmployeeAsUser()[pri:0, instance:TestCases.UserManagement@6743e411]" started-at="2024-03-05T10:16:07 IST" name="CheckEmployeeAsUser" finished-at="2024-03-05T10:16:09 IST" duration-ms="2218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckEmployeeAsUser -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestCases.UserManagement@6743e411]" started-at="2024-03-05T10:16:09 IST" name="logout" finished-at="2024-03-05T10:16:10 IST" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:TestCases.UserManagement@6743e411]" started-at="2024-03-05T10:16:10 IST" name="closeApp" finished-at="2024-03-05T10:16:10 IST" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
