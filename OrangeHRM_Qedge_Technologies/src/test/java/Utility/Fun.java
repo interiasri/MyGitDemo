@@ -25,8 +25,8 @@ public class Fun {
 		driver.get("http://orangehrm.qedgetech.com");
 	}
 	
-	
-//	log.Login("Admin", "Qedge123!@#");
+//	Admin Login Credentials-log.Login("Admin", "Qedge123!@#");
+//	Employee Login Details(Username: Sridharp1234) And (Password: Sridhar@123!123)
 	
 	@BeforeTest
 	public void login() {
@@ -42,7 +42,6 @@ public class Fun {
 		driver.findElement(By.partialLinkText("Welcome")).click();
 		driver.findElement(By.linkText("Logout")).click();
 	}
-	
 	
 	@AfterSuite
 	public void closeApp() {

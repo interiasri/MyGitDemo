@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [QedgeTechnologies- Orange HRM Test Cases]">
-  <test thread-count="5" name="Admin Module Test Case(failed)">
-    <parameter name="module" value="Admin"/>
+  <test thread-count="5" name="Check Employee records Test Case(failed)">
     <classes>
-      <class name="TestCases.IsSpecificModuleTestCase">
+      <class name="TestCases.UserManagement">
         <methods>
           <include name="login"/>
-          <include name="isModuleDisplayed"/>
+          <include name="CheckEmployeeAsUser"/>
           <include name="closeApp"/>
           <include name="logout"/>
           <include name="invokeApp"/>
         </methods>
-      </class> <!-- TestCases.IsSpecificModuleTestCase -->
+      </class> <!-- TestCases.UserManagement -->
     </classes>
-  </test> <!-- Admin Module Test Case(failed) -->
-  <test thread-count="5" name="Employee Registration Test Case(failed)">
-    <parameter name="emplist" value="Employee List"/>
-    <parameter name="module" value="PIM"/>
-    <parameter name="subitem" value="Add Employee"/>
-    <classes>
-      <class name="TestCases.AddEmployee">
-        <methods>
-          <include name="login"/>
-          <include name="closeApp"/>
-          <include name="empreg"/>
-          <include name="logout"/>
-          <include name="invokeApp"/>
-        </methods>
-      </class> <!-- TestCases.AddEmployee -->
-    </classes>
-  </test> <!-- Employee Registration Test Case(failed) -->
+  </test> <!-- Check Employee records Test Case(failed) -->
 </suite> <!-- Failed suite [QedgeTechnologies- Orange HRM Test Cases] -->

@@ -44,6 +44,7 @@ public class AddEmployee extends Fun {
 		System.out.println(empid);
 		driver.findElement(By.id("btnSave")).click();
 		
+		Thread.sleep(2000);
 		nav=driver.findElement(By.id("mainMenuFirstLevelUnorderedList"));
 		currentmodule=nav.findElement(By.xpath("//li[contains(@class,'current')]"));
 		sublist=currentmodule.findElement(By.tagName("ul")).findElements(By.tagName("li"));
@@ -53,13 +54,16 @@ public class AddEmployee extends Fun {
 				break;
 			}
 		}
+		Thread.sleep(2000);
 		String empinfo=driver.findElement(By.xpath("//*[@id=\"employee-information\"]/div[1]/h1")).getText();
 		System.out.println(empinfo);
-		
+		Thread.sleep(2000);
 		driver.findElement(By.id("empsearch_employee_name_empName")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.id("empsearch_employee_name_empName")).sendKeys("Sridhar");
 		Thread.sleep(2000);
 		List<WebElement> searchlist=driver.findElement(By.xpath("/html/body/div[4]")).findElement(By.tagName("ul")).findElements(By.tagName("li"));
+
 		System.out.println(searchlist.size());
 		
 		for(int j=0; j<searchlist.size(); j++) {

@@ -1,4 +1,5 @@
 <suite name="QedgeTechnologies- Orange HRM Test Cases">
+
 	<test name="Admin Module Test Case">
 	<parameter name="module" value="Admin"></parameter>
 		<classes>
@@ -6,12 +7,36 @@
 		</classes>
 	</test>
 	
+	<!--Check Admin able to Add Employee details- Add Employee-->
+	
 	<test name="Employee Registration Test Case">
 	<parameter name="module" value="PIM"></parameter>
 	<parameter name="subitem" value="Add Employee"></parameter>
 	<parameter name="emplist" value="Employee List"></parameter>
 		<classes>
 			<class name="TestCases.AddEmployee"></class>
+		</classes>
+	</test>
+	
+	<!--Check Admin Can able to Register - User Registration Form for Employee-->
+	
+	<test name="User Registartion Testcase">
+	<parameter name="module" value="Admin"></parameter>
+	<parameter name="subitem" value="User Management"></parameter>
+		<classes>
+			<class name="TestCases.AddUser"></class>
+		</classes>
+	</test>
+	<!--Check Employee Login with Valid Credentials-->
+	<test name="Employee Login Test Case">
+		<classes>
+			<class name="TestCases.EmployeeLoginTest"></class>
+		</classes>
+	</test>
+	
+	<test name="Check Employee records Test Case">
+		<classes>
+			<class name="TestCases.UserManagement"></class>
 		</classes>
 	</test>
 	

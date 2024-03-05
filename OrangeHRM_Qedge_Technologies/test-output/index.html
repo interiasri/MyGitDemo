@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-QedgeTechnologies__Orange_HRM_Test_Cases" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content passed suite-QedgeTechnologies__Orange_HRM_Test_Cases">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-QedgeTechnologies__Orange_HRM_Test_Cases" title="TestCases.AddEmployee" class="method navigator-link" hash-for-method="empreg(PIM, Add Employee, Employee List)">empreg(PIM, Add Employee, Employee List)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-QedgeTechnologies__Orange_HRM_Test_Cases" title="TestCases.IsSpecificModuleTestCase" class="method navigator-link" hash-for-method="isModuleDisplayed(Admin)">isModuleDisplayed(Admin)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-QedgeTechnologies__Orange_HRM_Test_Cases" title="TestCases.UserManagement" class="method navigator-link" hash-for-method="CheckEmployeeAsUser">CheckEmployeeAsUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-QedgeTechnologies__Orange_HRM_Test_Cases -->
@@ -126,31 +121,14 @@
           <div class="suite-QedgeTechnologies__Orange_HRM_Test_Cases-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.IsSpecificModuleTestCase</span>
+              <span class="class-name">TestCases.UserManagement</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="isModuleDisplayed(Admin)">
-                  </a> <!-- isModuleDisplayed(Admin) -->
-                  <span class="method-name">isModuleDisplayed</span>
-                  <span class="parameters">(Admin)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-QedgeTechnologies__Orange_HRM_Test_Cases-class-passed -->
-          <div class="suite-QedgeTechnologies__Orange_HRM_Test_Cases-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.AddEmployee</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="empreg(PIM, Add Employee, Employee List)">
-                  </a> <!-- empreg(PIM, Add Employee, Employee List) -->
-                  <span class="method-name">empreg</span>
-                  <span class="parameters">(PIM,Add Employee,Employee List)</span>
+                  <a name="CheckEmployeeAsUser">
+                  </a> <!-- CheckEmployeeAsUser -->
+                  <span class="method-name">CheckEmployeeAsUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,20 +143,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;QedgeTechnologies- Orange HRM Test Cases&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Admin Module Test Case&quot;&gt;
-    &lt;parameter name=&quot;module&quot; value=&quot;Admin&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Check Employee records Test Case&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.IsSpecificModuleTestCase&quot;/&gt;
+      &lt;class name=&quot;TestCases.UserManagement&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Admin Module Test Case --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Employee Registration Test Case&quot;&gt;
-    &lt;parameter name=&quot;emplist&quot; value=&quot;Employee List&quot;/&gt;
-    &lt;parameter name=&quot;module&quot; value=&quot;PIM&quot;/&gt;
-    &lt;parameter name=&quot;subitem&quot; value=&quot;Add Employee&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;TestCases.AddEmployee&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Employee Registration Test Case --&gt;
+  &lt;/test&gt; &lt;!-- Check Employee records Test Case --&gt;
 &lt;/suite&gt; &lt;!-- QedgeTechnologies- Orange HRM Test Cases --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,10 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Admin Module Test Case (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Employee Registration Test Case (1 class)</span>
+                <span class="test-name">Check Employee records Test Case (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,20 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'empreg')
-data.setCell(0, 2, 'TestCases.AddEmployee')
-data.setCell(0, 3, 7078);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'isModuleDisplayed')
-data.setCell(1, 2, 'TestCases.IsSpecificModuleTestCase')
-data.setCell(1, 3, 97);
+data.setCell(0, 1, 'CheckEmployeeAsUser')
+data.setCell(0, 2, 'TestCases.UserManagement')
+data.setCell(0, 3, 2575);
 window.suiteTableData['QedgeTechnologies__Orange_HRM_Test_Cases']= { tableData: data, tableDiv: 'times-div-QedgeTechnologies__Orange_HRM_Test_Cases'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-QedgeTechnologies__Orange_HRM_Test_Cases">
               </div> <!-- times-div-QedgeTechnologies__Orange_HRM_Test_Cases -->
             </div> <!-- times-div -->
@@ -258,44 +220,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.AddEmployee</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.UserManagement</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">invokeApp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.IsSpecificModuleTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">login</span>
-                <span class="method-start">2341 ms</span>
+                <span class="method-start">2423 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">isModuleDisplayed(Admin)</span>
-                <span class="method-start">4022 ms</span>
+                <span class="method-name">CheckEmployeeAsUser</span>
+                <span class="method-start">3735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">logout</span>
-                <span class="method-start">4124 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.AddEmployee</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">login</span>
-                <span class="method-start">4774 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">empreg(PIM, Add Employee, Employee List)</span>
-                <span class="method-start">5620 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">logout</span>
-                <span class="method-start">12700 ms</span>
+                <span class="method-start">6315 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">13186 ms</span>
+                <span class="method-start">6877 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
