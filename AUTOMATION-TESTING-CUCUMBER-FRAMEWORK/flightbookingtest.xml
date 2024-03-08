@@ -1,0 +1,22 @@
+<suite name="Flight Reservation Test Suite">
+	<test name="Select Flight Date">
+		<classes>
+			<class name="TestRunners.CheckFlightDateTest"></class>
+		</classes>
+	</test>
+	<test name="Check Login Test">
+		<classes>
+			<class name="TestRunners.CheckLogin"></class>
+		</classes>
+	</test>
+	<test name="Search flights Test">
+		<classes>
+			<class name="TestRunners.SearchFlightsTest"></class>
+		</classes>
+	</test>
+	<test name="Select flight route Test">
+		<classes>
+			<class name="TestRunners.SelectFlightRoute"></class>
+		</classes>
+	</test>
+</suite>

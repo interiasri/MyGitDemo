@@ -1,13 +1,11 @@
 package TestRunners;
 
-import org.junit.runner.RunWith;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-
-@RunWith(Cucumber.class)
+//@RunWith(Cucumber.class)
 @CucumberOptions(features = "Features/FlightReserveDate.feature", glue = "steps", dryRun = false,
 plugin = {"pretty", "html:testreports/flightreserve.html"})
-public class CheckFlightDateTest {
+public class CheckFlightDateTest extends AbstractTestNGCucumberTests {
 
 }
